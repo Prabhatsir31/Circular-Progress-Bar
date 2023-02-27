@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circular Progress Bar</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="skill">
+		<div class="outer">
+			<div class="inner">
+				<div id="number">
+		
+				</div>
+			</div>
+		</div>
+
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+			<defs>
+				<linearGradient id="GradientColor">
+					<stop offset="0%" stop-color="#e91e63" />
+					<stop offset="50%" stop-color="lightblue" />
+					<stop offset="100%" stop-color="#673ab7" />
+				</linearGradient>
+			</defs>
+			<circle class="circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+		</svg>
+	</div>
+
+<script type="text/javascript">
+		let number = document.getElementById("number");
+		let counter = 0;
+		setInterval(() => 
+		{
+			if(counter == 65)
+			{
+				clearInterval();
+			}
+			else
+			{
+				counter += 1;
+				number.innerHTML = counter + "%";
+			}
+
+		}, 30)
+	</script>
+
+	<div class="skill1">
+		<div class="outer1">
+			<div class="inner1">
+				<div id="number1">
+		
+				</div>
+			</div>
+		</div>
+
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+			<defs>
+				<linearGradient id="GradientColor">
+					<stop offset="0%" stop-color="#e91e63" />
+					<stop offset="50%" stop-color="lightblue" />
+					<stop offset="100%" stop-color="#673ab7" />
+				</linearGradient>
+			</defs>
+			<circle class="circle1" cx="80" cy="80" r="70" stroke-linecap="round" />
+		</svg>
+	</div>
+
+<script type="text/javascript">
+	let number1 = document.getElementById("number1");
+		let counter1 = 0;
+		setInterval(() => 
+		{
+			if(counter1 == 90)
+			{
+				clearInterval();
+			}
+			else
+			{
+				counter1 += 1;
+				number1.innerHTML = counter1 + "%";
+			}
+
+		}, 30)
+</script>
+
+
+
+	
+</body>
+</html>
